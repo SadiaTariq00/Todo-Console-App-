@@ -17,7 +17,7 @@ A command-line interface (CLI) todo application built with Python that allows us
 
 - **Language**: Python 3.13+
 - **Architecture**: Model-Manager-UI pattern
-- **Dependencies**: Standard library with optional colorama for colorful output
+- **Dependencies**: Managed with UV package manager (colorama, plotext)
 - **Development**: Spec-driven development with Claude Code
 
 ## 🚀 Setup Instructions
@@ -25,7 +25,7 @@ A command-line interface (CLI) todo application built with Python that allows us
 ### Prerequisites
 
 - Python 3.13+ installed on your system
-- (Optional) UV package manager for dependency management
+- UV package manager for dependency management (required)
 
 ### Installation
 
@@ -35,24 +35,22 @@ A command-line interface (CLI) todo application built with Python that allows us
    cd todo-console
    ```
 
-3. (Optional) If using UV package manager, initialize the project:
+3. Install dependencies using UV package manager:
    ```bash
-   uv init
+   uv sync
    ```
 
-4. Install required dependencies (if any):
+4. Run the application:
    ```bash
-   # The application primarily uses Python standard library
-   # but may require colorama for colored output:
-   pip install colorama plotext
+   uv run python src/main.py
    ```
 
 ## 🎯 Usage
 
-Run the application directly using Python:
+Run the application using UV:
 
 ```bash
-python src/main.py
+uv run python src/main.py
 ```
 
 The application will start and display a menu with the following options:

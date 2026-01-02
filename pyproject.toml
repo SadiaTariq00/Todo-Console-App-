@@ -1,0 +1,13 @@
+[project]
+name = "todo-console-app"
+version = "1.0.0"
+description = "In-Memory Python Console Todo Application"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "colorama>=0.4.6",
+    "plotext>=5.2.8"
+]
+
+[project.scripts]
+todo = "src.main:main"
